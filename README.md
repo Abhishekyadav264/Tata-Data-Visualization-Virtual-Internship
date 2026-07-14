@@ -1,123 +1,203 @@
-![190601774-db1cbc4d-0daa-4853-a890-ebc6c15895ab](https://github.com/user-attachments/assets/a79332d9-d4c0-4c53-abf8-717a747c75f3)
+# 📊 Tata Data Visualization Virtual Internship
 
+![Tableau](https://img.shields.io/badge/Tableau-Visualization-E97627?logo=tableau)
+![PowerBI](https://img.shields.io/badge/PowerBI-Alternative%20Tool-yellow?logo=powerbi)
+![Excel](https://img.shields.io/badge/Excel-Raw%20Data-217346?logo=microsoftexcel)
+![Status](https://img.shields.io/badge/Internship-Completed-brightgreen)
 
-The virtual experience programme is provided by Tata iQ or Tata Insights and Quants. I discover how passionate, multidisciplinary experts utilise data visualisation technologies like Tableau and Power BI to take on some of the most difficult business problems and uncover fascinating insights buried in the mountains of produced data.
+Completed coursework and deliverables for the **Tata Data Visualization: Empowering Business with Effective Insights** virtual experience programme (offered by Tata iQ / Tata Insights and Quants), covering business-question framing, chart selection, hands-on visual creation in Tableau, and a final stakeholder presentation.
 
-The programme demonstrates the kind of issues dealt with by Tata Insights and Quants every day and makes an effort to imitate the difficulties an individual could have.
+---
 
-There are 4 modules in this virtual experience programme.
-♦ Framing the Business Scenario
+## 🚀 Programme Overview
 
-♦ Choosing the Right Visuals
+This repository documents my completion of Tata's **Data Visualization virtual experience programme**, delivered via Forage. The programme simulates the kind of real business problems that Tata Insights and Quants (Tata iQ) — a multidisciplinary data and analytics consultancy — solves for clients every day, using visualization tools like **Tableau** and **Power BI** to uncover insights buried in raw business data.
 
-♦ Creating Effective Visuals
+The programme is structured into **4 progressive modules**, each building on the last:
 
-♦ Communicating Insights and Analysis
+| Module | Focus |
+|---|---|
+| **1. Framing the Business Scenario** | Learning to anticipate the questions business leaders need answered |
+| **2. Choosing the Right Visuals** | Matching the correct chart type to a given business scenario |
+| **3. Creating Effective Visuals** | Cleaning data and building real visuals in Tableau/Power BI |
+| **4. Communicating Insights and Analysis** | Presenting findings back to business leadership |
 
-Task 1 - Framing the Business Scenario
-Learn how to anticipate the questions your business leaders will need answers to.
+---
 
-Background info and context
+## 🎯 Business Scenario
 
-An online retail store has hired you as a consultant to review their data and provide insights that would be valuable to the CEO and CMO of the business. The business has been performing well and the management wants to analyse what the major contributing factors are to the revenue so they can strategically plan for next year.
+An **online retail store** has hired me (in the role of a data consultant) to review its sales data and generate insights valuable to the **CEO** and **CMO**. The business has been performing well, and leadership wants to:
 
-The leadership is interested in viewing the metrics from both an operations and marketing perspective. Management also intends to expand the business and is interested in seeking guidance into areas that are performing well so they can keep a clear focus on what’s working. They would also like to view different metrics based on the demographic information that is available in the data.
+- Understand the major factors contributing to revenue, to plan strategically for next year.
+- View performance metrics from both an **operations** and a **marketing** perspective.
+- Identify which areas of the business are performing well, to support an **expansion strategy**.
+- Break down metrics using the available customer demographic and country-level data.
 
-A meeting with the CEO and CMO has been scheduled for next month and you need to draft the relevant analytics and insights that would help evaluate the current business performance and suggest metrics that would enable them to make the decision on expansion.
+A meeting with the CEO and CMO was framed as the goal throughout — every task in this repository builds toward that meeting.
 
-Remember, thinking from the perspective of business leaders allows you to analyse the data more effectively and present better insights.
+---
 
-Access the links in the resources below to better understand how business leaders think and approach business performance.
+## 📂 Project Structure
 
-Details for task
+```
+Tata-Data-Visualization-Virtual-Internship/
+│
+├── Task 1/
+│   ├── Task1.pdf                          # Written CEO & CMO questions with justifications
+│   └── Online Retail Data Set.xlsx        # Raw source dataset (541,909 transactions)
+│
+├── Task 2/
+│   └── quiz.docx                          # Completed chart-selection quiz (5 questions)
+│
+├── Task 3/
+│   └── Task3.twb                          # Tableau workbook with 4 visuals (Question1–Question4 tabs)
+│
+├── Task 4.mp4                             # Recorded stakeholder presentation video (~5 minutes)
+│
+└── README.md
+```
 
-To prepare for your meeting, you need to draft questions that you think will be important and relevant to the CEO and CMO. This preparation will be your guide as you develop your presentation.
+---
 
-For this task, you are only required to draft the questions. Make sure to think both quantitatively and qualitatively.
+## 🗂️ Dataset Description
 
-You’ve been provided a dataset in the resources below to use as the basis for your exploration. Review this data, taking note of what information has been provided, what insights you can garner, and what is relevant to both the CEO and CMO respectively.
+The dataset used throughout the programme is the classic **"Online Retail" transactional dataset** (`Online Retail Data Set.xlsx`), containing **541,909 transaction records** from a UK-based online retailer, spanning the year 2010–2011.
 
-Create a set of four questions that you anticipate each business leader will ask and want to know the answers to. Make sure you differentiate your questions, as both the CEO and CMO view business decisions through different lenses.
+| Column | Description |
+|---|---|
+| `InvoiceNo` | Unique invoice/transaction number |
+| `StockCode` | Product/item code |
+| `Description` | Product name |
+| `Quantity` | Number of units purchased (contains some negative values — returns) |
+| `InvoiceDate` | Date and time of the transaction |
+| `UnitPrice` | Price per unit (contains some erroneous zero/negative entries) |
+| `CustomerID` | Unique customer identifier |
+| `Country` | Country the order was shipped to |
 
-Eight (8) questions in total (4 for the CEO and 4 for the CMO)
+This is real, "messy" transactional retail data — it includes return transactions (negative quantities) and data-entry errors (invalid unit prices), which is exactly what makes Task 3's data-cleaning step necessary.
 
-Task 2 - Choosing the Right Visuals
-Learn which visuals are most effective in a given scenario
+---
 
-Background info and context
+## 📝 Task 1 — Framing the Business Scenario
 
-You have been asked by the CEO and CMO to provide visuals on the metrics that they wish to analyse for the online retail store. You will gather the requirements and provide them with the type of visual that would be best suited to the scenario. The senior management wants to understand how their business is performing and what areas are the key strengths of the company. They are also focused on identifying opportunities that would lead to growth and generate more revenue in the future.
+**Goal:** Learn how to anticipate the questions business leaders need answered, before building any visuals.
 
-You will be provided multiple visualisation requests by the CEO and you would need to provide the visual which would explain the data and insights in the simplest possible manner. The visual should adequately convey the information that you are trying to present. This exercise is critical to the senior management as any incorrect representation can lead to a wrong message being conveyed, or a wrong decision taken by the management. Therefore, you would need to make sure that the correct visuals are used to represent each set of data.
+**Deliverable:** Draft 4 questions for the CEO and 4 questions for the CMO (8 total), thinking both quantitatively and qualitatively, reflecting how each leader views the business differently.
 
-Details for task
+### Questions drafted for the CEO (operations/revenue lens):
+1. **Which region is generating the highest revenue, and which is generating the lowest?** — to identify where to double down and where to investigate underperformance.
+2. **What is the monthly trend of revenue — which months saw the biggest increase/decrease?** — to connect internal changes (launches, delays) to revenue swings.
+3. **Which months generated the most revenue — is there seasonality in sales?** — to plan around predictable seasonal demand.
+4. **Who are the top customers, and how much do they contribute to total revenue? Is the business dependent on them, or is the customer base diversified?** — to flag concentration risk vs. a healthy, diversified customer base.
 
-In this task, you will be required to read the questions carefully and understand that business requirement. Once you have an idea of what is required from the perspective of the CEO and CMO, you will need to come up with the perfect visual which will illustrate what the senior managers are looking for in each scenario. Remember, data can be presented in multiple types of charts, but you are required to select the visual that would best display the information which is being presented.
+### Questions drafted for the CMO (customer/marketing lens):
+1. **What percentage of customers are repeat orders, and are they buying the same or different products?** — to gauge loyalty and inform re-targeting strategy.
+2. **For repeat customers, how long between orders?** — to understand purchase cadence and time marketing touchpoints effectively.
+3. **How much revenue comes from customers who've ordered more than once?** — to quantify the value of retention vs. acquisition.
+4. **Who are the most frequent repeat customers, and how much do they contribute to revenue?** — to distinguish high-frequency/low-value customers (who may need bulk discounts) from high-value/low-frequency customers (who need consistent stock availability).
 
-You will be provided resources on how to select visuals based on the different scenarios, these are available in the resources section. These resources will help you get an idea on which visual to select for the given business scenario and will also guide you on how to choose the right chart or graph for your data. Each question will contain a unique scenario and you will be expected to answer the questions based on that scenario.
+*(Full write-up with detailed justifications for each question is available in `Task 1/Task1.pdf`.)*
 
-To complete this task, answer the multiple-choice quiz. Start the quiz by clicking 'Click here to start the task' in section 5 below. Please note there are 5 multiple choice questions to complete in this task. Please be patient as each question loads.
+---
 
-Task 3 - Creating Effective Visuals
-Apply your under and create visuals based on business scenarios
+## 🎨 Task 2 — Choosing the Right Visuals
 
-Background info and context
+**Goal:** Practice matching the correct chart type to a specific business visualization request — since the wrong chart can lead to the wrong message or a bad decision by leadership.
 
-The CEO and CMO have recently met to finalise the requirements and would like you to provide them with some analysis and visuals that would help answer their questions. Both, the executives are interested in viewing and understanding how they can use the data to make more meaningful decisions. You would need to provide insights which they can use to create the expansion strategy. The executives want to analyse the trends and the breakdown by different categories so that they have clarity on how the revenue is being generated and what are the main factors affecting the online store.
+**Format:** 5-question multiple-choice quiz, each posing a CEO/CMO visualization request.
 
-You will be provided with the requirements of the executives and how they want to view the data. After the requirement gathering phase, you would need to make sure that the data you are using is of good quality and does not contain any bad data that would have an adverse impact on your analysis. Once the data is cleaned, the next step would be to create the visuals on either Tableau or Power BI. No matter which tool you choose for the visuals, the result should be the same. These results will help the executives with effective decision making and assist in their expansion strategy.
+| # | Scenario | Chart Selected |
+|---|---|---|
+| 1 | CEO wants a full-year revenue time series to spot seasonal trends | **Line Chart** |
+| 2 | CMO wants top 10 countries by revenue, broken down further by product | **Stacked Bar Chart** |
+| 3 | CEO wants min, Q1, median, Q3, and max of average revenue per country in one view | **Box Plot** |
+| 4 | CMO wants top 10 customers by revenue, sorted highest to lowest | **Column Chart** |
+| 5 | CEO wants demand by region across all countries, viewable at a glance with no scrolling/hovering | **Map Chart** |
 
-Details for task
+*(Full quiz responses are in `Task 2/quiz.docx`.)*
 
-In this task, you will create the visuals around four of the questions that the CEO and CMO have requested. You can use either Tableau or Power BI to create the visuals and we’ve provided the data in the resources below. Both Power BI and Tableau have free trials that can be accessed in order to complete this task. You can find a resource below that directs you how to download these free trials.
+---
 
-Data cleanup
+## 📈 Task 3 — Creating Effective Visuals
 
-Before you can begin the analysis, make sure that the data is cleaned properly. You have noticed that the data contains some returns to the store which are provided in negative quantities and there are unit prices which were input in error. You will need to perform the following steps to clean this data.
+**Goal:** Clean the raw dataset and build the actual visuals requested by the CEO/CMO in Tableau.
 
-• Create a check that the quantity should not be below 1 unit
+### Data Cleaning Steps Applied
+Before any visual was built, the raw dataset was cleaned to remove bad data using conditional filters:
+- **Removed rows where `Quantity < 1`** — filtering out returns (negative quantities) and zero-quantity entries.
+- **Removed rows where `UnitPrice < 0`** — filtering out erroneous/invalid price entries.
 
-• Create a check that the Unit price should not be below $0
+### Visuals Built (Tableau, `Task3.twb`)
+Each visual was created on its own worksheet tab, named by question number (`Question1`–`Question4`):
 
-Please note that in order to apply the checks that have been mentioned above, you would need to use conditional formulas where the logic would state that if the conditions are met then the tool should exclude the data from analysis. You can also use data transformation methods to get rid of the bad data. Both these methods are provided in the resources section. Once this is done, the data will be good to be used for further analysis. Please note that this data should be cleaned up before attempting any question.
+| Tab | Business Question | What It Shows |
+|---|---|---|
+| **Question1** | CEO wants a month-by-month time series of 2011 revenue to spot seasonal trends and plan next year's forecast | Monthly revenue line/trend chart for 2011 |
+| **Question2** | CMO wants the top 10 countries by revenue (excluding the UK), along with quantity sold | Top 10 non-UK countries — revenue and quantity |
+| **Question3** | CMO wants the top 10 customers by revenue, ordered from highest to lowest | Descending column/bar chart of top 10 customers |
+| **Question4** | CEO wants product demand across all countries (excluding the UK) in a single, scannable view for expansion planning | Map-based view of demand by country |
 
-Create each visual on a separate tab with the name of the tab displaying the question number. Once the visuals are created, save the files and upload them below. For Tableau users, you would need to upload in .twbx format whereas Power BI files need to be saved in .pbix format. Instructions on how to save in these formats are provided in the resources section.
+Excluding the UK in Questions 2 and 4 was a deliberate requirement from the CEO/CMO — since the UK is the home market and already dominant, removing it surfaces the **best international expansion opportunities**, which was the actual business goal behind the analysis.
 
-Should you get stuck, please reference the Visuals Hints document in the resources.
+---
 
-Question 1
+## 🎤 Task 4 — Communicating Insights and Analysis
 
-The CEO of the retail store is interested to view the time series of the revenue data for the year 2011 only. He would like to view granular data by looking into revenue for each month. The CEO is interested in viewing the seasonal trends and wants to dig deeper into why these trends occur. This analysis will be helpful for the CEO to forecast for the next year.
+**Goal:** Present the Task 3 findings back to the CEO and CMO in a clear, business-focused way — not just a walkthrough of the charts, but the reasoning and recommendations behind them.
 
-Question 2
+**Deliverable:** A ~5-minute recorded video presentation (`Task 4.mp4`) covering:
+- The initial data load and clean-up process (to demonstrate due diligence and data integrity).
+- A walkthrough of all four visuals from Task 3, explained in the context of the CEO's and CMO's original questions.
+- Insights and recommendations tied directly to the business goal of **identifying the most lucrative expansion opportunities**.
 
-The CMO is interested in viewing the top 10 countries which are generating the highest revenue. Additionally, the CMO is also interested in viewing the quantity sold along with the revenue generated. The CMO does not want to have the United Kingdom in this visual.
+---
 
-Question 3
+## 💡 Key Takeaways
 
-The CMO of the online retail store wants to view the information on the top 10 customers by revenue. He is interested in a visual that shows the greatest revenue generating customer at the start and gradually declines to the lower revenue generating customers. The CMO wants to target the higher revenue generating customers and ensure that they remain satisfied with their products.
+- Framing the *right business questions first* is more important than jumping straight into visuals — Task 1 forced thinking from the CEO's and CMO's distinct perspectives before touching any data.
+- Chart choice is not cosmetic — a **line chart** for trends, a **stacked bar** for category breakdowns, a **box plot** for distribution summaries, a **column chart** for ranked comparisons, and a **map** for geographic demand each serve a specific communication purpose, and picking the wrong one actively misleads stakeholders.
+- Real business data is messy — returns (negative quantities) and data-entry errors (invalid prices) must be explicitly filtered out before any analysis is trustworthy.
+- Excluding the "home market" (UK) from country-level comparisons was necessary to make the analysis actually useful for the stated goal: finding new international growth opportunities, not just confirming the UK is the biggest market.
+- Communicating insights to leadership requires narrating the *process* (data cleaning, methodology) as well as the *findings* — this builds trust in the analysis, not just the conclusion.
 
-Question 4
+---
 
-The CEO is looking to gain insights on the demand for their products. He wants to look at all countries and see which regions have the greatest demand for their products. Once the CEO gets an idea of the regions that have high demand, he will initiate an expansion strategy which will allow the company to target these areas and generate more business from these regions. He wants to view the entire data on a single view without the need to scroll or hover over the data points to identify the demand. There is no need to show data for the United Kingdom as the CEO is more interested in viewing the countries that have expansion opportunities.
+## 🛠️ Tools Used
 
-Task 4 - Communicating Insights and Analysis
-Effectively communicate your findings and explain how it relates to each scenario
+| Tool | Purpose |
+|---|---|
+| **Excel** | Reviewing and exploring the raw transactional dataset |
+| **Tableau** | Data cleaning (conditional filters) and building all four visuals |
+| *(Power BI was an accepted alternative for Task 3, per programme instructions)* | |
 
-Background info and context
+---
 
-It’s time to present your findings to the CEO and CMO. They are interested in your thought process and how you have handled the data cleanup and visualisation phase. It is important to explain your thought process and ideas in a clear and straightforward way. You are also required to clearly present the analysis of all four questions from the previous task. Make sure you are well versed with the data and the conclusions you’ve made from your analysis.
+## 👀 How to View This Project
 
-Expansion is top of mind for these leaders and they’re keen to understand where the most lucrative opportunities are in their business.
+1. Read `Task 1/Task1.pdf` for the full CEO/CMO business-question framing exercise.
+2. Read `Task 2/quiz.docx` for the chart-selection reasoning.
+3. Open `Task 3/Task3.twb` in **Tableau Desktop** (free trial available) to explore the four interactive visuals (`Question1`–`Question4` tabs), built on the cleaned version of `Task 1/Online Retail Data Set.xlsx`.
+4. Watch `Task 4.mp4` for the full stakeholder presentation walking through the data cleaning process and all four visuals with business commentary.
 
-Details for task
+---
 
-Develop a script and record a video presenting your findings to the CEO and CMO based on the four questions they asked and the visuals you created in the previous tasks.
+## 🎯 Skills Demonstrated
 
-You can use your work or the model answer from the previous task to develop your presentation.
+- **Business analysis:** translating a vague leadership ask ("help us understand performance") into specific, answerable, role-appropriate questions.
+- **Data visualization theory:** matching chart type to data structure and communication intent (trend vs. ranking vs. distribution vs. geography).
+- **Data cleaning:** applying conditional-filter logic to remove returns and invalid entries before analysis.
+- **Tableau:** building multiple linked worksheets/visuals from a single cleaned data source.
+- **Business communication:** presenting a full analytical narrative (data → cleaning → visuals → insights → recommendation) to a simulated executive audience.
 
-When writing your script, you should speak about your entire process, including the initial data load and clean-up steps so that your leaders know you’ve done your due diligence in providing error-free analysis. Data analysis provides heaps of information but remember to focus on the information that is most important to your leaders.
+---
 
-Your video should be approximately 5 minutes in length. You can record your video in the browser or upload a video from your device below.
+## 📌 Conclusion
 
-Remember, this is not just a read out of your visuals, you’re presenting to the CEO and CMO and need to provide context for each scenario and how it relates to their questioning.
+This project reflects a full, structured walk-through of the data visualization consulting process as practiced at Tata Insights and Quants — starting from understanding what business leaders actually need to know, through selecting and building the right visuals on real (messy) retail transaction data, and ending with a clear, narrated presentation of findings tied to a concrete business goal: identifying the best opportunities for international expansion.
+
+---
+
+## 👤 Author
+
+**Abhishek**
+Aspiring Data Analyst
